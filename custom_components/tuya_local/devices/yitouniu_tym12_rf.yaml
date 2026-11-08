@@ -1,0 +1,38 @@
+name: Yitouniu TYM12-RF Motor Controller
+products:
+  - id: 0gzbwgc5nxfhkpwd
+    name: Yitouniu TYM12-RF
+entities:
+  - entity: cover
+    name: Abwasserventil
+    class: damper
+    dps:
+      - id: 1
+        type: string
+        name: control
+        mapping:
+          - dps_val: open
+            value: open
+          - dps_val: close
+            value: close
+          - dps_val: stop
+            value: stop
+  - entity: select
+    name: Motorlaufzeit
+    icon: mdi:timer-cog-outline
+    category: config
+    dps:
+      - id: 101
+        type: string
+        name: option
+        mapping:
+          - dps_val: AQAC
+            value: "2 Sekunden"
+          - dps_val: AQAD
+            value: "3 Sekunden"
+          - dps_val: AQAE
+            value: "4 Sekunden"
+          - dps_val: AQAF
+            value: "5 Sekunden"
+          - dps_val: AQAG
+            value: "6 Sekunden"
