@@ -1,7 +1,8 @@
-name: Yitouniu TYM12-RF Motor Controller
+name: Motor controller
 products:
   - id: 0gzbwgc5nxfhkpwd
-    name: Yitouniu TYM12-RF
+    manufacturer: Yitouniu
+    model: TYM12-RF
 entities:
   - entity: cover
     name: Abwasserventil
